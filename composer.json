@@ -1,0 +1,18 @@
+{
+	"name": "sledgehammer/sledgehammer",
+	"type": "metapackage",
+	"description": "Sledgehammer Framework",
+	"homepage": "http://sledgehammer.github.com",
+	"keywords": ["sledgehammer", "framework", "oop"],
+	"require": {
+		"sledgehammer/core": "*",
+		"sledgehammer/orm": "*",
+		"sledgehammer/graphics": "*",
+		"sledgehammer/mvc": "*",
+		"sledgehammer/minify": "*",
+		"sledgehammer/facebook": "*",
+		"sledgehammer/geoip": "*",
+		"sledgehammer/filters": "*",
+		"sledgehammer/validators": "*"
+	}
+}

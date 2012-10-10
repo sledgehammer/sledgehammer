@@ -1,0 +1,8 @@
+{
+	"name": "sledgehammer/validators",
+	"type": "sledgehammer-module",
+	"description": "Object oriented validation.",
+	"require": {
+		"sledgehammer/core": "*"
+	}
+}

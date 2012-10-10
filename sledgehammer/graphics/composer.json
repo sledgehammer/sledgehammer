@@ -1,0 +1,8 @@
+{
+	"name": "sledgehammer/graphics",
+	"type": "sledgehammer-module",
+	"description": "Image processing library",
+	"require": {
+		"sledgehammer/core": "*"
+	}
+}

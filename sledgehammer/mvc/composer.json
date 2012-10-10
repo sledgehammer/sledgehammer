@@ -1,0 +1,11 @@
+{
+	"name": "sledgehammer/mvc",
+	"type": "sledgehammer-module",
+	"description": "Model View Controller architecture.",
+	"require": {
+		"sledgehammer/core": "*"
+	},
+	"suggest": {
+		"sledgehammer/minify": "Minify assets like css, javascript and images"
+	}
+}

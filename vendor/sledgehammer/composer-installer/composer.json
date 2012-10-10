@@ -1,0 +1,20 @@
+{
+    "name": "sledgehammer/composer-installer",
+	"type": "composer-installer",
+    "description": "A Composer installer for Sledgehammer Framework modules",
+    "keywords": [
+        "sledgehammer", "framework", "installer"
+    ],
+    "authors": [
+        {
+            "name": "Bob Fanger",
+            "email": "bfanger@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Sledgehammer": "src/" }
+    },
+    "extra": {
+        "class": "Sledgehammer\\ComposerInstaller"
+    }
+}
