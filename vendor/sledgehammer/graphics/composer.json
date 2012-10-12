@@ -1,0 +1,10 @@
+{
+	"name": "sledgehammer/graphics",
+	"description": "Sledgehammer Graphics module: Image and Video processing",
+	"type": "library",
+	"license": "CC-BY-SA-3.0",
+	"require": {
+		"sledgehammer/core": "*",
+		"ext-gd": "*"
+	}
+}

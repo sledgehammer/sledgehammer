@@ -1,8 +1,0 @@
-{
-	"name": "sledgehammer/facebook",
-	"type": "sledgehammer-module",
-	"description": "Facebook SDK + An OOP interface to the Graph API",
-	"require": {
-		"sledgehammer/core": "*"
-	}
-}

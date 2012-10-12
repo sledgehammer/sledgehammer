@@ -1,65 +1,77 @@
 {
-    "hash": "db9af46fee25358cebb6189a0b20e68e",
+    "hash": "d56160ba83954cfa9e3f3dbb6c7a1c41",
     "packages": [
         {
-            "name": "sledgehammer/composer-installer",
-            "version": "1.0",
+            "name": "facebook/php-sdk",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sledgehammer/composer-installer",
-                "reference": "1.0"
+                "url": "git://github.com/facebook/facebook-php-sdk.git",
+                "reference": "v3.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sledgehammer/composer-installer/zipball/1.0",
-                "reference": "1.0",
+                "url": "https://github.com/facebook/facebook-php-sdk/zipball/v3.2.0",
+                "reference": "v3.2.0",
                 "shasum": ""
             },
-            "time": "2012-10-07 07:31:34",
-            "type": "composer-installer",
-            "extra": {
-                "class": "Sledgehammer\\ComposerInstaller"
+            "require": {
+                "php": ">=5.2.0",
+                "ext-curl": "*",
+                "ext-json": "*"
             },
+            "time": "2012-08-14 10:28:20",
+            "type": "library",
             "installation-source": "dist",
             "autoload": {
-                "psr-0": {
-                    "Sledgehammer": "src/"
-                }
+                "classmap": [
+                    "src"
+                ]
             },
+            "license": [
+                "Apache2"
+            ],
             "authors": [
                 {
-                    "name": "Bob Fanger",
-                    "email": "bfanger@gmail.com"
+                    "name": "Facebook",
+                    "homepage": "https://github.com/facebook/facebook-php-sdk/contributors"
                 }
             ],
-            "description": "A Composer installer for Sledgehammer Framework modules",
+            "description": "Facebook PHP SDK",
+            "homepage": "https://github.com/facebook/facebook-php-sdk",
             "keywords": [
-                "framework",
-                "installer",
-                "sledgehammer"
+                "facebook",
+                "sdk"
             ]
         },
         {
             "name": "sledgehammer/core",
-            "version": "12.10",
+            "version": "12.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sledgehammer/core",
-                "reference": "12.10"
+                "reference": "12.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sledgehammer/core/zipball/12.10",
-                "reference": "12.10",
+                "url": "https://github.com/sledgehammer/core/zipball/12.10.1",
+                "reference": "12.10.1",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0",
-                "sledgehammer/composer-installer": "*"
+                "php": ">=5.3.0"
             },
-            "time": "2012-10-07 09:23:06",
-            "type": "sledgehammer-module",
+            "time": "2012-10-12 11:07:47",
+            "type": "library",
             "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "license": [
+                "CC-BY-SA-3.0"
+            ],
             "description": "The foundation of the Sledgehammer Framework",
             "homepage": "http://sledgehammer.github.com/",
             "keywords": [
@@ -70,127 +82,144 @@
         },
         {
             "name": "sledgehammer/facebook",
-            "version": "12.10",
+            "version": "12.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sledgehammer/facebook",
-                "reference": "12.10"
+                "reference": "12.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sledgehammer/facebook/zipball/12.10",
-                "reference": "12.10",
+                "url": "https://github.com/sledgehammer/facebook/zipball/12.10.1",
+                "reference": "12.10.1",
                 "shasum": ""
             },
             "require": {
-                "sledgehammer/core": "*"
+                "sledgehammer/core": "*",
+                "facebook/php-sdk": "*"
             },
-            "time": "2012-10-09 13:14:46",
-            "type": "sledgehammer-module",
+            "time": "2012-10-12 11:59:32",
+            "type": "library",
             "installation-source": "dist",
-            "description": "Facebook SDK + An OOP interface to the Graph API"
+            "license": [
+                "CC-BY-SA-3.0"
+            ],
+            "description": "Sledgehammer Facebook module. An OOP layer on top of the official Facebook SDK."
         },
         {
             "name": "sledgehammer/filters",
-            "version": "12.10",
+            "version": "12.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sledgehammer/filters",
-                "reference": "12.10"
+                "reference": "12.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sledgehammer/filters/zipball/12.10",
-                "reference": "12.10",
+                "url": "https://github.com/sledgehammer/filters/zipball/12.10.1",
+                "reference": "12.10.1",
                 "shasum": ""
             },
             "require": {
                 "sledgehammer/core": "*"
             },
-            "time": "2012-10-07 09:23:24",
-            "type": "sledgehammer-module",
+            "time": "2012-10-12 11:12:41",
+            "type": "library",
             "installation-source": "dist",
-            "description": "Object oriented filters/converters"
+            "license": [
+                "CC-BY-SA-3.0"
+            ],
+            "description": "Sledgehammer Filter module. Object oriented filters/converters"
         },
         {
             "name": "sledgehammer/geoip",
-            "version": "12.10",
+            "version": "12.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sledgehammer/geoip",
-                "reference": "12.10"
+                "reference": "12.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sledgehammer/geoip/zipball/12.10",
-                "reference": "12.10",
+                "url": "https://github.com/sledgehammer/geoip/zipball/12.10.1",
+                "reference": "12.10.1",
                 "shasum": ""
             },
             "require": {
                 "sledgehammer/core": "*"
             },
-            "time": "2012-10-07 09:25:53",
-            "type": "sledgehammer-module",
+            "time": "2012-10-12 11:42:41",
+            "type": "library",
             "installation-source": "dist",
-            "description": "MaxMind GeoIp Lite",
+            "license": [
+                "CC-BY-SA-3.0"
+            ],
+            "description": "Sledgehammer GeoIP module: IP to Country lookup via an MaxMind GeoLite database",
             "homepage": "http://www.maxmind.com/en/geolite"
         },
         {
             "name": "sledgehammer/graphics",
-            "version": "12.10",
+            "version": "12.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sledgehammer/graphics",
-                "reference": "12.10"
+                "reference": "12.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sledgehammer/graphics/zipball/12.10",
-                "reference": "12.10",
+                "url": "https://github.com/sledgehammer/graphics/zipball/12.10.1",
+                "reference": "12.10.1",
                 "shasum": ""
             },
             "require": {
-                "sledgehammer/core": "*"
+                "sledgehammer/core": "*",
+                "ext-gd": "*"
             },
-            "time": "2012-10-07 09:26:19",
-            "type": "sledgehammer-module",
+            "time": "2012-10-12 11:41:45",
+            "type": "library",
             "installation-source": "dist",
-            "description": "Image processing library"
+            "license": [
+                "CC-BY-SA-3.0"
+            ],
+            "description": "Sledgehammer Graphics module: Image and Video processing"
         },
         {
             "name": "sledgehammer/minify",
-            "version": "12.10",
+            "version": "12.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sledgehammer/minify",
-                "reference": "12.10"
+                "reference": "12.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sledgehammer/minify/zipball/12.10",
-                "reference": "12.10",
+                "url": "https://github.com/sledgehammer/minify/zipball/12.10.1",
+                "reference": "12.10.1",
                 "shasum": ""
             },
             "require": {
                 "sledgehammer/core": "*"
             },
-            "time": "2012-10-07 09:29:21",
-            "type": "sledgehammer-module",
+            "time": "2012-10-12 11:41:10",
+            "type": "library",
             "installation-source": "dist",
-            "description": "Minify css, javascript and images files."
+            "license": [
+                "CC-BY-SA-3.0"
+            ],
+            "description": "Sledgehammer Minify module: Minify css, javascript and images assets."
         },
         {
             "name": "sledgehammer/mvc",
-            "version": "12.10",
+            "version": "12.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sledgehammer/mvc",
-                "reference": "12.10"
+                "reference": "12.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sledgehammer/mvc/zipball/12.10",
-                "reference": "12.10",
+                "url": "https://github.com/sledgehammer/mvc/zipball/12.10.1",
+                "reference": "12.10.1",
                 "shasum": ""
             },
             "require": {
@@ -199,54 +228,63 @@
             "suggest": {
                 "sledgehammer/minify": "Minify assets like css, javascript and images"
             },
-            "time": "2012-10-08 06:16:17",
-            "type": "sledgehammer-module",
+            "time": "2012-10-12 11:33:27",
+            "type": "library",
             "installation-source": "dist",
-            "description": "Model View Controller architecture."
+            "license": [
+                "CC-BY-SA-3.0"
+            ],
+            "description": "Sledgehammer MVC module: Provides a Model View Controller architecture"
         },
         {
             "name": "sledgehammer/orm",
-            "version": "12.10",
+            "version": "12.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sledgehammer/orm",
-                "reference": "12.10"
+                "reference": "12.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sledgehammer/orm/zipball/12.10",
-                "reference": "12.10",
+                "url": "https://github.com/sledgehammer/orm/zipball/12.10.1",
+                "reference": "12.10.1",
                 "shasum": ""
             },
             "require": {
                 "sledgehammer/core": "*"
             },
-            "time": "2012-10-07 09:32:06",
-            "type": "sledgehammer-module",
+            "time": "2012-10-12 11:38:17",
+            "type": "library",
             "installation-source": "dist",
-            "description": "Object relational mapping"
+            "license": [
+                "CC-BY-SA-3.0"
+            ],
+            "description": "Sledgehammer ORM module: Object relational mapping"
         },
         {
             "name": "sledgehammer/validators",
-            "version": "12.10",
+            "version": "12.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sledgehammer/validators",
-                "reference": "12.10"
+                "reference": "12.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sledgehammer/validators/zipball/12.10",
-                "reference": "12.10",
+                "url": "https://github.com/sledgehammer/validators/zipball/12.10.1",
+                "reference": "12.10.1",
                 "shasum": ""
             },
             "require": {
                 "sledgehammer/core": "*"
             },
-            "time": "2012-10-07 09:33:10",
-            "type": "sledgehammer-module",
+            "time": "2012-10-12 11:37:57",
+            "type": "library",
             "installation-source": "dist",
-            "description": "Object oriented validation."
+            "license": [
+                "CC-BY-SA-3.0"
+            ],
+            "description": "Sledgehammer Validation module: Object oriented validation."
         }
     ],
     "packages-dev": null,

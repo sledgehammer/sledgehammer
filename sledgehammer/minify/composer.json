@@ -1,8 +1,0 @@
-{
-	"name": "sledgehammer/minify",
-	"type": "sledgehammer-module",
-	"description": "Minify css, javascript and images files.",
-	"require": {
-		"sledgehammer/core": "*"
-	}
-}

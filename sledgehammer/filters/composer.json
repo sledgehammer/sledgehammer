@@ -1,8 +1,0 @@
-{
-	"name": "sledgehammer/filters",
-	"type": "sledgehammer-module",
-	"description": "Object oriented filters/converters",
-	"require": {
-		"sledgehammer/core": "*"
-	}
-}

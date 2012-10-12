@@ -30,6 +30,8 @@ class ComposerAutoloaderInit
 
         $loader->register();
 
+        require $vendorDir . '/sledgehammer/core/bootstrap.php';
+
         return $loader;
     }
 }

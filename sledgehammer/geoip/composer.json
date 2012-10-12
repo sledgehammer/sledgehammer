@@ -1,9 +1,0 @@
-{
-	"name": "sledgehammer/geoip",
-	"homepage": "http://www.maxmind.com/en/geolite",
-	"type": "sledgehammer-module",
-	"description": "MaxMind GeoIp Lite",
-	"require": {
-		"sledgehammer/core": "*"
-	}
-}

@@ -1,0 +1,8 @@
+{
+	"name": "sledgehammer/filters",
+	"description": "Sledgehammer Filter module. Object oriented filters/converters",
+	"license": "CC-BY-SA-3.0",
+	"require": {
+		"sledgehammer/core": "*"
+	}
+}
