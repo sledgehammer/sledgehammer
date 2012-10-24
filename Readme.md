@@ -1,6 +1,8 @@
 # Sledgehammer Framework
 
-This is the meta repository of the Sledgehammer Framework. It's used as a reference installation with the popular sledgehammer modules installed.
+https://github.com/sledgehammer/sledgehammer is the meta repository of the Sledgehammer Framework.  
+It's used as a reference installation with popular modules installed. 
+
 
 ### Other resources
 
@@ -11,21 +13,26 @@ This is the meta repository of the Sledgehammer Framework. It's used as a refere
 
 
 Sledgehammer Framework is a modular framework, with [sledgehammer/core](http://github.com/sledgehammer/core) as its foundation.
-Allowing you to build up your appliction with reusable modules.
+Allowing you to build your application with reusable modules.
+
 
 ## Installation
-The recommended way is to install sledgehammer modules with [composer](http://getcomposer.org/).
+Is recommended to install sledgehammer with [composer](http://getcomposer.org/)
 
 ```
-$ composer.phar require sledgehammer/core *
+$ composer.phar require sledgehammer/core:*
 ```
-`include('sledgehamer/core/bootstrap.php');` to activate the framework.
+
+After `include('vendor/autoload.php');` the sledgehammer framework (and the other composer libraries) can be used.
+
 
 ## Why
+
 
 ### Lean and mean
 By keeping the number of classes to a minimum (Core currently has 29) it is easier to learn and remember.
 For example: It doesn't use multiple Exception clasess that behave exacly the same as \Exception.
+
 
 ### Debugging
 Sledgehammer provides excellent error reporting and debugging facilities.
@@ -41,9 +48,13 @@ dump($myVar);
 \Sledgehammer\statusbar();
 ```
 
-### AutoLoader
-Sledgehammers don't have to comply to the [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) standard, because it has an AutoLoader that will autoload anything, from anywhere.
-It also plugs some holes in PHP's namespace implementation.
+Uses [DebugR](http://debugr.net/) for advanced debugging ajax requests.
+
+
+### Autoloader
+Sledgehammer modules don't follow the rules of [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) standard, because it has an Autoloader that will work with any folderlayout.  
+It also plugs some holes in PHP's namespace implementation and is generally more forgiving than other Autoloaders.
+
 
 ### Plays well with others
 Sledgehammer can be used as a framework, as a library or to augment an existing framework.
@@ -52,9 +63,11 @@ Sledgehammer can be used as a framework, as a library or to augment an existing 
 ## Configuration
 Sledgehammer is a "Convension over configuration" framework. It's goal is to reduce and simplify your code.
 
+
 ### Error emails
 The email address in `$_SERVER['SERVER_ADMIN']` is used by the ErrorHandler to send error reports in non-development environments.
 
+
 ### Environments
-Like [other frameworks](http://framework.zend.com/manual/1.12/en/zend.application.quick-start.html) it uses the $_SERVER['APPLICATION_ENV'] to determine the environment or assumes a "production" enviromnent.
+Like [other frameworks](http://framework.zend.com/manual/1.12/en/zend.application.quick-start.html) it uses the `$_SERVER['APPLICATION_ENV']` to determine the environment or assumes a "production" enviromnent.
 The detected value is stored in the `Sledgehammer\ENVIROMENT` constant.
