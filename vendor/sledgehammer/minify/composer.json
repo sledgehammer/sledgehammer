@@ -1,9 +1,0 @@
-{
-	"name": "sledgehammer/minify",
-	"description": "Sledgehammer Minify module: Minify css, javascript and images assets.",
-	"type": "library",
-	"license": "CC-BY-SA-3.0",
-	"require": {
-		"sledgehammer/core": "*"
-	}
-}

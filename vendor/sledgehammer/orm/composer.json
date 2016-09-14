@@ -1,9 +1,0 @@
-{
-	"name": "sledgehammer/orm",
-	"description": "Sledgehammer ORM module: Object relational mapping",
-	"type": "library",
-	"license": "CC-BY-SA-3.0",
-	"require": {
-		"sledgehammer/core": "*"
-	}
-}
