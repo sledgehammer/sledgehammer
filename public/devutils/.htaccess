@@ -1,0 +1,6 @@
+Allow from all
+
+# Alle niet bestaande bestanden en mappen doorsluisen
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$            rewrite.php?%{QUERY_STRING} [L]

@@ -5,7 +5,7 @@
 ?>
 <div class="navbar">
 	<div class="navbar-inner">
-		<a class="brand" href="<?php echo Sledgehammer\WEBROOT; ?>index.html">My App</a>
+		<a class="brand" href="<?= Sledgehammer\WEBROOT; ?>index.html">My App</a>
 	</div>
 </div>
 <div class="container">

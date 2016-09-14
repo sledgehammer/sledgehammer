@@ -2,6 +2,7 @@
 	"name": "sledgehammer/sledgehammer",
 	"type": "metapackage",
 	"description": "Sledgehammer Framework",
+    "license": "MIT",
 	"homepage": "http://sledgehammer.github.com",
 	"keywords": ["sledgehammer", "framework", "oop"],
 	"require": {
@@ -9,10 +10,18 @@
 		"sledgehammer/orm": "*",
 		"sledgehammer/graphics": "*",
 		"sledgehammer/mvc": "*",
-		"sledgehammer/minify": "*",
+        "php": ">=5.6"
+	},
+    "outdated": {
+        "sledgehammer/minify": "*",
 		"sledgehammer/facebook": "*",
 		"sledgehammer/geoip": "*",
 		"sledgehammer/filters": "*",
 		"sledgehammer/validators": "*"
-	}
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/src/"
+        }
+    }
 }
